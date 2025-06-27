@@ -1,0 +1,21 @@
+steps:
+  - name: 'gcr.io/cloud-builders/composer'
+    entrypoint: 'composer'
+    args: ['install', '--no-dev', '--optimize-autoloader']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/linen-badge-455223-b6/stores-app', '.']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/linen-badge-455223-b6/stores-app']
+
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - stores-app
+      - --image=gcr.io/linen-badge-455223-b6/stores-app
+      - --region=asia-southeast1
+      - --platform=managed
+      - --quiet

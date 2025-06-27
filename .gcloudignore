@@ -3,6 +3,7 @@
 
 # Allow app.yaml
 !app.yaml
+!Dockerfile
 
 # Allow Laravel folders
 !app/**
