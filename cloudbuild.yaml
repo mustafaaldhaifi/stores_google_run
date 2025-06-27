@@ -19,3 +19,6 @@ steps:
       - --region=asia-southeast1
       - --platform=managed
       - --quiet
+
+options:
+  logging: CLOUD_LOGGING_ONLY
