@@ -1,24 +1,21 @@
 steps:
-  - name: 'gcr.io/cloud-builders/composer'
-    entrypoint: 'composer'
-    args: ['install', '--no-dev', '--optimize-autoloader']
-
+  # Step: Build Docker image from your Dockerfile
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/linen-badge-455223-b6/stores-app', '.']
 
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/linen-badge-455223-b6/stores-app']
-
+  # Step (اختياري): Deploy to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
-    args:
-      - run
-      - deploy
-      - stores-app
-      - --image=gcr.io/linen-badge-455223-b6/stores-app
-      - --region=asia-southeast1
-      - --platform=managed
-      - --quiet
+    args: [
+      'run', 'deploy', 'stores-app',
+      '--image', 'gcr.io/linen-badge-455223-b6/stores-app',
+      '--region', 'asia-southeast1',
+      '--platform', 'managed',
+      '--allow-unauthenticated'
+    ]
+
+images:
+  - 'gcr.io/linen-badge-455223-b6/stores-app'
 
 options:
   logging: CLOUD_LOGGING_ONLY
