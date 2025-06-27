@@ -1,0 +1,22 @@
+runtime: php
+env: flex
+
+runtime_config:
+    document_root: public
+    operating_system: "ubuntu22"
+    runtime_version: "8.2"
+
+env_variables:
+  APP_ENV: production
+  APP_DEBUG: false
+  APP_KEY: base64:UvvushZgTqNQC/DoRNp0J+c6eZ/PhNRrioc1EWY7b5g=
+  DB_CONNECTION: mysql
+  DB_HOST: linen-badge-455223-b6:australia-southeast2:mysqldb
+  DB_PORT: 3306
+  DB_DATABASE: u574242705_yemen_apps1
+  DB_USERNAME: mustafa
+  DB_PASSWORD: 774519161
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 3

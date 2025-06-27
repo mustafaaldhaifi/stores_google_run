@@ -1,0 +1,51 @@
+<?php 
+{
+    "acknowledgementState": "ACKNOWLEDGEMENT_STATE_PENDING",
+    "kind": "androidpublisher#subscriptionPurchaseV2",
+    "latestOrderId": "GPA.3358-5884-6108-62719",
+    "linkedPurchaseToken": null,
+    "regionCode": "YE",
+    "startTime": "2025-06-21T20:03:41.226Z",
+    "subscriptionState": "SUBSCRIPTION_STATE_ACTIVE",
+    "testPurchase": {},
+    "lineItems": [
+        {
+            "expiryTime": "2025-06-21T20:13:40.547Z",
+            "productId": "premium_access",
+            "prepaidPlan": {
+                "allowExtendAfterTime": "2025-06-21T20:03:40.547Z"
+            },
+            "offerDetails": {
+                "basePlanId": "3-months",
+                "offerId": null,
+                "offerTags": null
+            }
+        }
+    ]
+}
+
+{
+    "acknowledgementState": "ACKNOWLEDGEMENT_STATE_PENDING",
+    "kind": "androidpublisher#subscriptionPurchaseV2",
+    "latestOrderId": "GPA.3312-9215-9563-98036",
+    "linkedPurchaseToken": "jbbhbaoamfoknodfkjjcbdmn.AO-J1OyiTUgQkRP7pzXfxH9smYXM5W1ZmMoz5r3X9u8zTPTzRTbInIDOCnD4zEeWDuHdLkMWYd5ntIgnXQxYqkL671A6L5_oOtChHURsTTYtyHVq9RxtlYA",
+    "regionCode": "YE",
+    "startTime": "2025-06-21T20:40:15.015Z",
+    "subscriptionState": "SUBSCRIPTION_STATE_ACTIVE",
+    "testPurchase": {},
+    "lineItems": [
+        {
+            "expiryTime": "2025-06-21T20:53:46.368Z",
+            "productId": "premium_access",
+            "prepaidPlan": {
+                "allowExtendAfterTime": "2025-06-21T20:43:01.637Z"
+            },
+            "offerDetails": {
+                "basePlanId": "3-months",
+                "offerId": null,
+                "offerTags": null
+            }
+        }
+    ]
+}
+ammelhmlbclejhcpebkcnedo.AO-J1Oz-y0-3egXtIrFzc4LbVNmqr9OOSfZf_c5O0aEZHQ4IO04J0GCkbbxf32wrSIEcrz4iAH0Isr4x7IqxgnWfHUX7dkyB9gWjobWDy-utRI8O1bn4sbw

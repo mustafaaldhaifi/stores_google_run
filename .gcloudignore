@@ -1,0 +1,19 @@
+# Ignore everything
+*
+
+# Allow app.yaml
+!app.yaml
+
+# Allow Laravel folders
+!app/**
+!bootstrap/**
+!config/**
+!database/**
+!public/**
+!resources/**
+!routes/**
+!storage/**
+
+!artisan
+!composer.json
+!composer.lock
